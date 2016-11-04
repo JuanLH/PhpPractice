@@ -1,0 +1,58 @@
+/*Use the width property to determine the width of the input field:*/
+input {
+    width: 100%;
+}
+/*Use the padding property to add space inside the text field.
+
+Tip: When you have many inputs after each other, you might also want to add some margin, to add more space outside of them:*/
+input[type=text],input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+/*Use the border property to change the border size and color, and use the border-radius property to add rounded corners:*/
+input[type=text],input[type=password] {
+    border: 2px solid red;
+    border-radius: 4px;
+}
+/*If you only want a bottom border, use the border-bottom property:*/
+input[type=text],input[type=password] {
+    border: none;
+    border-bottom: 2px solid red;
+}
+/*Use the background-color property to add a background color to the input, and the color property to change the text color:*/
+input[type=text],input[type=password] {
+    /*background-color: #3CBC8D;
+    color: white;*/
+}
+/*By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding outline: none; to the input.
+
+Use the :focus selector to do something with the input field when it gets focus:*/
+input[type=text]:focus,input[type=password]:focus {
+    background-color: lightblue;
+}
+/*
+If you want an icon inside the input, use the background-image property and position it with the background-position property. Also notice that we add a large left padding to reserve the space of the icon:
+*/
+/*
+input[type=text] {
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+*/
+/* Styling Input Buttons */
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Tip: use width: 100% for full-width buttons */
